@@ -29,7 +29,7 @@ if response2.status_code != 200:
 # Download the file
 download_response = session.get(download_url)
 if download_response.status_code == 200:
-    with open('downloaded_file.zip', 'wb') as f:
+    with open('data.zip', 'wb') as f:
         f.write(download_response.content)
     print("File downloaded successfully!")
 else:
